@@ -7,11 +7,11 @@
 
 
 ## Базовая конфигурация
-|AD             |BD             |APP             |DEV1           |DEV2           |
-| ------------- | ------------- | ------------- |    ------------- |  ------------- | 
-|Windows Server 2019 GUI |Windows Server 2019 GUI   |Windows Server 2019 Core|Windows 10           |Ubuntu           |
-|Administartor |Administartor   |Administartor|Admin           |user           |
-|Pa$$w0rd |Pa$$w0rd  |Pa$$w0rd|Pa$$w0rd          |Pa$$w0rd           |
+|DC1             |DC2             |CLI1             |CLI2           |
+| ------------- | ------------- | ------------- |    ------------- | 
+|Windows Server 2022 GUI |Windows Server 2022 Core   |Windows Server 2019 Core|Windows 10           |
+|Administartor |Administartor   |Administartor|Admin           |
+|Pa$$w0rd |Pa$$w0rd  |Pa$$w0rd|Pa$$w0rd          |
 
 ## Основные службы 
 - Active directory
