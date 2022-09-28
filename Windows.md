@@ -287,5 +287,74 @@ DHCP
 ## на Виртуальной машине DC2
 
 
+![image](https://user-images.githubusercontent.com/79700810/192785825-e17e6927-85c0-4973-af2c-742f2685cf5a.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192785918-dab19276-6464-44f6-988d-1cdf5a72c5be.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192786056-3e02e383-d3e5-4925-a20f-a2da5d232014.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192786208-22961e4c-c1d6-4c08-88c4-2ff25d5c0564.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192786462-83a49c96-6416-4b02-ba6c-21b7c7e792b0.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192786547-9467b470-cf07-4874-a94e-5f12d3effc9b.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787155-3aae47e6-20cf-4730-b5ec-07c531dd30a7.png)
+
+
+на DC1
+
+![image](https://user-images.githubusercontent.com/79700810/192787330-88324207-4687-49db-8057-1ef9a5557122.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787435-50062df9-c8d6-449a-850d-def4f33352c5.png)
+
+
+
+ADDS RODS
+
+![image](https://user-images.githubusercontent.com/79700810/192787592-0762e19a-2e7e-4d45-bfbd-8ede2996cd29.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787663-246b3bb1-b3d9-4955-9870-00a0586cd004.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787730-626f58b2-7bc8-4920-838c-3b281cf2c7a9.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787825-0abd64ab-e90a-4d29-8d1f-9ec3e197a056.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192787899-834671d9-dedf-4e16-a88c-195c686f8078.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192787946-f853b60d-699a-4ef1-a06d-eda1b9f3190e.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192788139-c3f524a1-c656-4045-9a99-dbce31d82ccd.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192788324-68b432b6-3497-4343-98ff-48b5e5f47b15.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192788470-4e58d086-b22c-4647-8892-772d1c9eab01.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192788534-0c4f314a-bf52-42a2-b5a7-de34d44a3931.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192788627-2485793e-c9f9-491d-b653-d255889e0c13.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192788695-c67ea5d7-ea7d-42d7-ae3f-b4b160f8c334.png)
+
 
 
