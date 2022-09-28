@@ -142,9 +142,149 @@ DNS
 ![image](https://user-images.githubusercontent.com/79700810/192779230-70b06f70-32dc-4ee3-8dc2-bbe280acf1f9.png)
 
 
-Пишем имя зоны из значения ActiveDNSProbeHost – msftncsi.com (без хоста dns)
+Пишем имя зоны из значения ActiveWebProbeHost – msftconnecttest.com (без хоста www)
 
-![image](https://user-images.githubusercontent.com/79700810/192779324-c092356d-6547-4886-ac66-85dcfc4df1e0.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192780392-f965b69f-fcb0-4806-a439-6dbeb1b1d6a7.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192780429-39a84bda-1a3f-40ab-9d4b-56710ee3ac18.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192780482-76f0282d-2069-4438-b34f-bb78a8c49b17.png)
+
+
+Внутри зона создаем А запись
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781030-0fe5d4a2-0cf2-4265-bea4-a22cdead1101.png)
+
+
+IIS
+
+![image](https://user-images.githubusercontent.com/79700810/192781173-9b3f46a3-03eb-44b7-962f-161178be2df9.png)
+
+Устанавливаем IIS сервер на DC1 в стандартной комплектации
+
+![image](https://user-images.githubusercontent.com/79700810/192781263-752f8958-afbf-4d37-9a63-aef25feeb87b.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781336-03589cc1-2274-42be-beb9-33540c1a2a23.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781434-c000cc18-49ef-45e2-827a-d228678ca51d.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781491-75122f77-f463-41ba-b2fa-5a6fed01e30a.png)
+
+
+создаем файл из ActiveWebProbePath – connecttest.txt (аккуратнее с
+расширениями файлов)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781847-a616ab5d-b333-4426-bb68-3ccc0b8aaffc.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192781916-adb6f2f7-4f79-42ab-978c-d03125461481.png)
+
+
+Внутри файла пишем из ActiveWebProbeContent – Microsoft Connect Test
+
+![image](https://user-images.githubusercontent.com/79700810/192782086-4cb216b5-2e88-47c7-97cb-18f33675f4ef.png)
+
+
+создаем сайт 
+
+![image](https://user-images.githubusercontent.com/79700810/192782253-5d8025ed-dd45-4c89-97d5-9b4cf2c0dd85.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192782361-f4188c43-33d1-4b63-b1de-122f439e6b6e.png)
+
+
+
+А также прописать в Bindings имя Host name – www.msftconnecttest.com
+
+![image](https://user-images.githubusercontent.com/79700810/192782508-73cb776a-edba-48f2-9dfc-d995e5ae9878.png)
+
+проверяем настройки адаптера 
+
+
+![image](https://user-images.githubusercontent.com/79700810/192782940-1e4493b7-ccad-4347-bd15-0918f46e49bb.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783161-4e1a2e7e-d05a-4b38-a6e1-9e0ec313cfac.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783261-c9268283-b671-4bd8-820a-a7798d14697f.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783379-8cc8135e-c077-4087-99f8-b906cb571d76.png)
+
+
+DHCP
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783508-0b535943-f943-42a6-bfd2-ad57e39f51cf.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783601-a6073585-c921-4896-a0d7-be8b28c77bcc.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783659-7835a5cb-2820-4eeb-ae94-e260c0eb7f69.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783721-9539a12b-88d9-4166-8972-962ca17df1c3.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783861-a15e8f11-b037-4c99-9cad-152984df3f91.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783928-6b9726d4-fba4-4c48-ad59-d878719096c0.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192783997-08222646-d16f-47cc-abaa-50a7c62e5941.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784137-75fa9d9e-6639-4b74-821c-6103d661c2a3.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784244-c4cff5bc-e3c4-4a07-9e25-b5d8c540a52f.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784365-a5546f50-34da-4bec-b992-dcc600df07c8.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784499-9fc2ac26-c56e-47f7-8971-250b4fc7fb56.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784560-45788f65-d989-4349-9007-22b6cd1b7c37.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784635-a4081595-3e72-4ed1-b7b8-30acfca47518.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192784712-60fd9032-0250-414d-ac50-93d462c934eb.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784840-e22144bc-561d-43e4-a5d5-1572908e4b54.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/192784899-b5251a97-caf2-4b08-8de2-cc623bd002b4.png)
+
+![image](https://user-images.githubusercontent.com/79700810/192784949-fadd772c-ae8a-47e4-aa77-0d46a27afbbf.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192785002-e5ec2235-e698-41b9-88e0-d647063b116b.png)
+
+
+
+## на Виртуальной машине DC2
 
 
 
