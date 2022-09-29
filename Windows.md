@@ -38,7 +38,7 @@
 Назначаем IP адрес, маску, шлюз по умолчанию
 ![image](https://user-images.githubusercontent.com/79700810/192774857-a67dab66-ef8b-4141-9651-c876142f982a.png)
 
-
+Изменение часового пояса
 ![image](https://user-images.githubusercontent.com/79700810/192775055-27c5f296-a342-4f58-b8e8-45c96b8097ec.png)
 
 
