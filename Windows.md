@@ -676,8 +676,7 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 ![image](https://user-images.githubusercontent.com/79700810/193015974-3cf5b727-f0c6-4528-b2fa-7c0bea147c6e.png)
 
 
-![image](https://user-images.githubusercontent.com/79700810/193016063-eb4b5c09-a2a8-4e04-9bb0-e679ac6619e2.png)
-
+![image](https://user-images.githubusercontent.com/79700810/193030154-2ab7cd82-ab29-4b67-a791-0d22ea798ba1.png)
 
 
 
@@ -819,4 +818,56 @@ NtpServer указываем dc1.wsrht39.ru,0x9
 
 ![image](https://user-images.githubusercontent.com/79700810/193028083-5bc11bfd-7669-494d-a9d8-6c8069937507.png)
 
+
+ПРОВЕРКА
+
+на CLI после перезагрузки под admHT391
+
+![image](https://user-images.githubusercontent.com/79700810/193028327-5c549d41-419a-43e8-8e0f-e83797c92250.png)
+
+
+
+нет анимации
+
+![image](https://user-images.githubusercontent.com/79700810/193028420-d9224e22-df4c-4d6f-9196-d1b49eb16367.png)
+
+
+Ярлык
+
+![image](https://user-images.githubusercontent.com/79700810/193028476-1fb0de37-6645-4c13-a549-c451235e3a9c.png)
+
+
+
+Кнопка сон 
+
+![image](https://user-images.githubusercontent.com/79700810/193028610-71000bf2-620d-45ab-8862-76c60b107f54.png)
+
+Локальный администратор
+
+![image](https://user-images.githubusercontent.com/79700810/193028751-05229269-7ca0-4c8f-afc5-bb8fbbe32054.png)
+
+
+Время и тайм зона 
+
+![image](https://user-images.githubusercontent.com/79700810/193028849-03c96a84-f9e7-4f91-9886-949609c7a255.png)
+
+
+
+Правила фаерволл
+
+![image](https://user-images.githubusercontent.com/79700810/193029307-af4f185c-084e-45f3-88c9-7be520c2e121.png)
+
+на CLI после перезагрузки под userHT391
+
+![image](https://user-images.githubusercontent.com/79700810/193029470-47dcadaf-10b4-4290-bed4-071a4a92ccdf.png)
+
+
+Рабочий стол
+
+![image](https://user-images.githubusercontent.com/79700810/193029728-17ebcbc4-fe77-422b-bb3b-fe2f1a2439f6.png)
+
+
+Сетевой диск 
+
+![image](https://user-images.githubusercontent.com/79700810/193030352-48b688e6-0546-4367-8fac-5e1960b092b0.png)
 
