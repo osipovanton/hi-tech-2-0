@@ -618,7 +618,51 @@ Sleep Settings > Allow standby states (S1-S3) when sleeping (on battery) -> Disa
 
 ![image](https://user-images.githubusercontent.com/79700810/193007307-909a7f3a-a8d1-4de9-b300-8b42428e31e0.png)
 
+Смена изображение на рабочем столе
+
+![image](https://user-images.githubusercontent.com/79700810/193008643-0c5cf207-083a-4d7b-b0f5-21ac59b77127.png)
 
 
-![image](https://user-images.githubusercontent.com/79700810/193007563-261bd5bc-b2ef-4f74-ae90-995d6af9ad81.png)
+![image](https://user-images.githubusercontent.com/79700810/193008855-f8cbdba8-3027-4154-90a1-fd09b26fb3d3.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193010532-91c78b5b-b528-4d8b-8a66-f7e58fcc8353.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193010809-19635357-b32a-4b0a-92a6-fa0d05fe4893.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193010889-d499d342-09f1-404a-a975-2e831f2eecd7.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193010991-e022b2d8-35ad-430b-9f95-887a83cf9251.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193011062-32a03a0b-491a-4dd3-8430-8152aa389684.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193011257-f608bf56-48fa-4803-8a2b-3e95f1adcd7d.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193011345-e32b3098-f6e1-403c-bd10-8cc8421f973a.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193011431-c4c0a227-4108-458f-a381-0feb4fe44c03.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193011505-4196fb41-11eb-4b47-bac9-159ac9fd9da4.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193013318-52930df8-7e64-473b-912c-9dccee8d6a08.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193012448-b32d652c-add7-48a4-aa40-e8d2a4ce119f.png)
+
+
+User Configuration > Policies > Administrative Templates > Desktop > Desktop > DesktopWallpaper -> Enabled
+
+
+![image](https://user-images.githubusercontent.com/79700810/193012713-b92d2f2c-2bfc-46c4-8d72-9e1883c764ee.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193013534-50bce958-87db-4d4e-940d-2f551e0949a4.png)
 
