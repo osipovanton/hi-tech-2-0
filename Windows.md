@@ -551,6 +551,12 @@ SMB
 
 
 
+GPO
+
+![image](https://user-images.githubusercontent.com/79700810/192988740-a4e36cb6-05e5-4133-9943-491844b12c44.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/192989727-e920704a-e665-4d10-906c-c3273ea13673.png)
 
 
 
