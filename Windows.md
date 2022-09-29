@@ -697,3 +697,96 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 
 ![image](https://user-images.githubusercontent.com/79700810/193016891-c36b1f62-666f-4c47-942c-f28af382d1cd.png)
 
+
+
+Создание ярлыков на рабочем столе
+
+![image](https://user-images.githubusercontent.com/79700810/193020421-494c3e89-76f4-454a-becc-0cf74b1d8d72.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193020557-1613f6e9-4007-48d4-83c2-1913485415d8.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193020762-0dc0afb3-979a-4ca0-9fd6-ddfad76bea20.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193020988-91ff1d40-6aa8-4d6b-a3a2-c8355acb0e8c.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193021139-f19db5c8-d844-4593-8403-06406c7acb4f.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193021275-8f542236-2a3f-4554-b4b1-6fe387bcc25b.png)
+
+local admin
+
+![image](https://user-images.githubusercontent.com/79700810/193023011-0e051772-8ac1-4c4f-a1bf-02b3fbd6dacc.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193023077-3a1b0287-c9bb-4afc-99e4-eb06ce3bc991.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193023199-6b790b16-0aac-43a2-a146-b4b752d36707.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193023356-f11597f0-b892-428d-b7a8-9db9c66cd941.png)
+![image](https://user-images.githubusercontent.com/79700810/193023445-615a9cee-653c-4d2e-8f31-6b7be15b48fd.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193023551-799ba2ca-3508-49f4-a777-3528efbbaeed.png)
+
+Time Zone
+
+![image](https://user-images.githubusercontent.com/79700810/193024023-60c5d9b2-2761-4585-85c8-84d895ffbf68.png)
+
+
+Computer Configuration > Preferences > Windows Settings > Registry -> New -> Registry Wizard
+
+![image](https://user-images.githubusercontent.com/79700810/193024184-4c6c50c0-567f-4a9e-a540-eef4446c325a.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193024267-d6bb6a39-1800-4a94-8db4-4efce69cb638.png)
+
+Создать «визардом» новую запись Local Computer выбираем ветку
+
+HKLM\System\CurrentControlSet\Control\TimeZoneInformation\
+
+![image](https://user-images.githubusercontent.com/79700810/193024532-9ec605cb-e143-418c-9547-dab000b8d9bd.png)
+
+
+NTP
+
+![image](https://user-images.githubusercontent.com/79700810/193024684-75b18669-32ba-4277-96d4-679a4edfd1fb.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193024793-9e0e1c4e-39e0-4ba1-853e-38a80ad32277.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193025006-5cad03aa-ba5a-4b7b-8421-ae9ff30cba85.png)
+
+
+Computer Configuration > Policies > Administrative Templates > System > Windows Time
+Service > Time providers > Enable Windows NTP Server -> Enabled
+
+![image](https://user-images.githubusercontent.com/79700810/193025538-6f28d737-d9a1-4cf3-99a6-e2fb15edfe5d.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193025592-ac1a0247-fe2e-4fdc-9d57-d682ba752231.png)
+
+
+
+Computer Configuration > Policies > Administrative Templates > System > Windows Time
+Service > Time providers > Enable Windows NTP Client -> Enabled
+
+![image](https://user-images.githubusercontent.com/79700810/193025651-8be68657-ac4c-416c-bf72-ffe78dfff0a0.png)
+
+
+Все компьютеры в домене должны синхронизировать время с контроллером домена DC.
+GPO на домен: Computer Configuration > Policies > Administrative Templates > System >
+Windows Time Service > Time providers > Configure Windows NTP Client ->
+NtpServer указываем dc1.wsrht39.ru,0x9
+
+
+![image](https://user-images.githubusercontent.com/79700810/193025700-3c885351-8972-4d29-914d-23417c76ad44.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193025915-0f0e3df0-975e-44cf-b171-1bcda17f4e9a.png)
+
