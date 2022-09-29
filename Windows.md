@@ -4,6 +4,9 @@
 ## Общие требования 
 
 
+![LL-Страница 7 (1)](https://user-images.githubusercontent.com/79700810/193062856-4ac1df3c-570b-41c1-97d2-5f1c7ab0e7af.jpg)
+
+
 
 
 ## Конфигурация
