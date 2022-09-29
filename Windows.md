@@ -31,10 +31,11 @@
 ![image](https://user-images.githubusercontent.com/79700810/192774459-d9127b04-69eb-40d9-b012-2fdee7b6294f.png)
 
 
+Для назначение сетевых конфигураций необходимо определить интерфейс
 
 ![image](https://user-images.githubusercontent.com/79700810/192774701-f0ba7741-9e39-47c4-915d-72e89015c24d.png)
 
-
+Назначаем IP адрес, маску, шлюз по умолчанию
 ![image](https://user-images.githubusercontent.com/79700810/192774857-a67dab66-ef8b-4141-9651-c876142f982a.png)
 
 
