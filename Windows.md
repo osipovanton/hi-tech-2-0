@@ -553,6 +553,8 @@ SMB
 
 GPO
 
+FW
+Computer Configuration > Policies > Windows Settings > Security Settings > Windows Defender Firewall with Advanced Security > Inbound Rules > New Rule
 ![image](https://user-images.githubusercontent.com/79700810/192988740-a4e36cb6-05e5-4133-9943-491844b12c44.png)
 
 
@@ -566,4 +568,57 @@ GPO
 ![image](https://user-images.githubusercontent.com/79700810/192996024-5132b57f-33f7-4973-9317-0afbfec28a54.png)
 
 
+![image](https://user-images.githubusercontent.com/79700810/193003137-bbfc41b8-53e3-45c6-86ac-f8950cf992ec.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193003251-2b723873-7554-4dc0-bb52-6eb49843c489.png)
+
+
+ANI
+
+![image](https://user-images.githubusercontent.com/79700810/193003808-3d478a3f-bac3-41a4-a729-6b3a6d7d5127.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193003994-3cec6e0a-a1de-4853-b85f-786b306b3c17.png)
+
+Computer Configuration > Policies > Administrative Templates > System > Logon > Show First Sign-In Animation -> Disabled
+
+
+![image](https://user-images.githubusercontent.com/79700810/193005061-34c62c08-d389-4590-8575-fc614b2ac5e8.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193005616-054c5724-2cf3-49b7-a88f-d89d52f1867e.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193005727-64a35154-6e5f-493b-a67b-14c65bd8b179.png)
+
+
+
+Speep
+
+![image](https://user-images.githubusercontent.com/79700810/193006406-1e03b743-9487-49b4-8c1d-aac3ff830230.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193006702-7215a9fa-d7c4-480d-b2b8-f704e2c78ab0.png)
+
+Computer Configuration > Policies > Administrative Templates > System > Power Management > Sleep Settings > Allow standby states (S1-S3) when sleeping (plugged in) -> Disabled
+
+
+![image](https://user-images.githubusercontent.com/79700810/193006954-e22ff0d6-140c-4ea9-9186-7ea2c2a49f0c.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193007101-2b5c75f8-7627-447c-abca-267057e5bd71.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193007198-596f441e-41ac-4558-af87-2e007598b83b.png)
+
+
+Computer Configuration > Policies > Administrative Templates > System > Power Management >
+Sleep Settings > Allow standby states (S1-S3) when sleeping (on battery) -> Disabled
+
+
+![image](https://user-images.githubusercontent.com/79700810/193007307-909a7f3a-a8d1-4de9-b300-8b42428e31e0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193007563-261bd5bc-b2ef-4f74-ae90-995d6af9ad81.png)
 
