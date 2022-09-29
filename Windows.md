@@ -666,3 +666,34 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 
 ![image](https://user-images.githubusercontent.com/79700810/193013534-50bce958-87db-4d4e-940d-2f551e0949a4.png)
 
+Создание диска
+
+![image](https://user-images.githubusercontent.com/79700810/193015607-3700ca31-6f6b-4a66-ab59-edd0e39d1f12.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193015780-bc807601-979e-48d9-b653-7f0b9ce360e6.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193015974-3cf5b727-f0c6-4528-b2fa-7c0bea147c6e.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193016063-eb4b5c09-a2a8-4e04-9bb0-e679ac6619e2.png)
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193015026-8065e4af-cc18-487f-b6a2-098de60ac60f.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193015457-0c34cd0a-e9ac-472e-be9e-5ed3fcae9efc.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193016443-227c3548-38bf-4e4d-80e5-905b1130269d.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/193016601-384dc7c5-c269-47b5-b60c-09b6be02fdff.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193016743-353a962f-67c6-4b98-bb30-2733074b02a0.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193016891-c36b1f62-666f-4c47-942c-f28af382d1cd.png)
+
