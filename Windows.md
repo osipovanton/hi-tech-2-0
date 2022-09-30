@@ -825,6 +825,45 @@ NtpServer указываем dc1.wsrht39.ru,0x9
 ![image](https://user-images.githubusercontent.com/79700810/193028083-5bc11bfd-7669-494d-a9d8-6c8069937507.png)
 
 
+на DC1
+
+NFS
+
+![image](https://user-images.githubusercontent.com/79700810/193242087-0fcd945a-b1b0-4ff4-8bf7-14489d25cb7e.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242106-3cad6d9b-9fdf-48da-b439-d0b0cb5c19cb.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242135-0c825c1f-1f38-4daa-b479-435d3fe39368.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242157-0bb7ad0f-b2fe-430d-8f19-8f6f4a38f6e9.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242271-6903ae00-958e-4187-b1d7-5c056fbb03d7.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242346-0d1fb4fc-cd90-44aa-9898-83718091e1dd.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242562-5fab9100-029d-4f68-9437-53a813681807.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242788-b9cbac7a-b9ba-4ad1-b674-6bc1056a98f4.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242843-8d91488a-95f8-45cb-b276-d0f182224dc9.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193242972-3e1d8b7e-1fb9-40ef-a63a-bde9a8c4f313.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193243026-4e5ddd01-26d3-48cd-b143-f796e87393e7.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193243064-01d0e07e-4954-4f13-ad6b-66a829e001bd.png)
+
 # на CLI2
 
 ```
