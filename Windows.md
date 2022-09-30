@@ -833,8 +833,22 @@ hostnamectl set-hostname CLI2
 ![image](https://user-images.githubusercontent.com/79700810/193225539-1bdb9346-5d71-4b95-b2ed-dd2f4698fe88.png)
 
 ```
+nmtui
+```
+![image](https://user-images.githubusercontent.com/79700810/193238103-35b19674-04c4-455e-bc15-803b4f6fd20c.png)
+
+![image](https://user-images.githubusercontent.com/79700810/193238195-c704e675-df0b-4a98-8317-9acf22f75a0c.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193238311-5f900082-4219-4e4b-baa0-9ca647cd58a6.png)
+
+
+
+
+```
 mkdir /media/CentOS
 ```
+
 
 ![image](https://user-images.githubusercontent.com/79700810/193225718-93c4d0a9-bae4-48b2-ba63-5ddcec85ef4c.png)
 
@@ -852,7 +866,7 @@ mv /etc/yum.repos.d/* .
 ![image](https://user-images.githubusercontent.com/79700810/193226029-2c2a7c78-d426-4cf9-8e77-4f5f7b810468.png)
 
 ```
-Cp CentOS-Stream-Media.repo /etc/yum.repos.d/
+cp CentOS-Stream-Media.repo /etc/yum.repos.d/
 ```
 
 
@@ -916,6 +930,29 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/193229835-5ae00efb-1a41-4883-ab5b-41ea944ae113.png)
 
 
+
+NFS
+
+```
+yum install nfs-utils
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193237511-0455cfe8-75c8-4664-9ff7-283792f5a6d5.png)
+
+
+```
+nano /etc/fstab
+
+dc2.wstht39.ru:/nfs /opt/share nfs defaults,_netdev 0 0
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193237598-08cfae5a-f4ef-41c5-80c6-37b6b2e60cd9.png)
+
+```
+mkdir /opt/share
+mount -a
+```
+
 ПРОВЕРКА
 
 на CLI1 после перезагрузки под admHT391
@@ -974,3 +1011,11 @@ reboot
 на CLI2 после перезагрузки под userht391@wstht39.ru
 
 ![image](https://user-images.githubusercontent.com/79700810/193230517-c1a1889d-77c0-4c96-9aba-447f8d5d6af2.png)
+
+
+touth /opt/share/123
+
+![image](https://user-images.githubusercontent.com/79700810/193237747-d3cdb646-3542-4150-89c7-ec3f1f1ef228.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/193237943-bae93378-3a99-44b3-85b9-729eb5bce944.png)
