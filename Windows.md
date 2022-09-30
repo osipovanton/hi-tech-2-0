@@ -827,14 +827,98 @@ NtpServer указываем dc1.wsrht39.ru,0x9
 
 # на CLI2
 
+```
+hostnamectl set-hostname CLI2
+```
+![image](https://user-images.githubusercontent.com/79700810/193225539-1bdb9346-5d71-4b95-b2ed-dd2f4698fe88.png)
+
+```
+mkdir /media/CentOS
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193225718-93c4d0a9-bae4-48b2-ba63-5ddcec85ef4c.png)
+
+```
+mount /dev/sr0 /media/CentOS
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193225837-eb8ba971-1f56-4bfd-a9e4-097a4d59eefe.png)
+
+
+```
+mv /etc/yum.repos.d/* .
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193226029-2c2a7c78-d426-4cf9-8e77-4f5f7b810468.png)
+
+```
+Cp CentOS-Stream-Media.repo /etc/yum.repos.d/
+```
+
+
+![image](https://user-images.githubusercontent.com/79700810/193226222-8babefb0-dba7-4759-8e49-4672518b30e5.png)
+
+
+```
+nano /etc/yum.repos.d/CentOS-Stream-Media.repo
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193226555-d4d0cc01-78c9-4f2c-abc6-5d91c5de3d39.png)
+
+
+```
+yum install sssd-ad sssd-tools realmd adcli
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193227128-6a63aefd-0afc-493f-9bd8-cc712034d212.png)
+
+
+```
+nano /etc/chrony.config
+```
+
+
+![image](https://user-images.githubusercontent.com/79700810/193228888-0999c2ff-2aef-4560-a3a5-58b52d3f8db7.png)
+
+
+```
+systemctl restart chronyd
+```
+
+
+![image](https://user-images.githubusercontent.com/79700810/193227700-adabf649-be2d-415a-9780-a98e47ef2dc3.png)
 
 
 
+Проверяем наличие контролеров домена в сети
+
+```
+realm discover
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193229328-f910e1d7-cc97-4aa6-a091-4d35d2c0b867.png)
+
+
+```
+realm join wstht39.ru
+realm list
+```
+
+
+![image](https://user-images.githubusercontent.com/79700810/193229560-55208382-4f6b-488e-9964-95cd0c9f1ad9.png)
+
+
+```
+authconfig --enablemkhomedir --update
+reboot
+```
+
+![image](https://user-images.githubusercontent.com/79700810/193229835-5ae00efb-1a41-4883-ab5b-41ea944ae113.png)
 
 
 ПРОВЕРКА
 
-на CLI после перезагрузки под admHT391
+на CLI1 после перезагрузки под admHT391
 
 ![image](https://user-images.githubusercontent.com/79700810/193028327-5c549d41-419a-43e8-8e0f-e83797c92250.png)
 
@@ -884,3 +968,9 @@ NtpServer указываем dc1.wsrht39.ru,0x9
 
 ![image](https://user-images.githubusercontent.com/79700810/193030352-48b688e6-0546-4367-8fac-5e1960b092b0.png)
 
+
+ПРОВЕРКА
+
+на CLI2 после перезагрузки под userht391@wstht39.ru
+
+![image](https://user-images.githubusercontent.com/79700810/193230517-c1a1889d-77c0-4c96-9aba-447f8d5d6af2.png)
