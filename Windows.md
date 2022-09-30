@@ -12,8 +12,8 @@
 ## Конфигурация
 |DC1             |DC2             |CLI1             |CLI2           |
 | ------------- | ------------- | ------------- |    ------------- | 
-|Windows Server 2022 GUI |Windows Server 2022 Core   |Windows 10|Ubuntu            |
-|Administartor |Administartor   |Administartor|user           |
+|Windows Server 2022 GUI |Windows Server 2022 Core   |Windows 10|CentOS 8            |
+|Administartor |Administartor   |Administartor|root           |
 |Pa$$w0rd |Pa$$w0rd  |Pa$$w0rd|Pa$$w0rd          |
 
 ## Основные службы 
@@ -823,6 +823,13 @@ NtpServer указываем dc1.wsrht39.ru,0x9
 
 
 ![image](https://user-images.githubusercontent.com/79700810/193028083-5bc11bfd-7669-494d-a9d8-6c8069937507.png)
+
+
+# на CLI2
+
+
+
+
 
 
 ПРОВЕРКА
