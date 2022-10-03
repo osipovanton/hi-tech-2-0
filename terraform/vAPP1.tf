@@ -5,8 +5,7 @@ resource "vcd_vapp" "web" {
 }
 
 resource "vcd_vapp_network" "vappNet" {
-  org = "rukavishnikov" # Optional
-  vdc = "vdcrukavishnikov" # Optional
+
   name               = "NetvAPP"
   vapp_name          = vcd_vapp.web.name
   gateway            = "192.168.2.1"
