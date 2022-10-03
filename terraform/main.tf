@@ -11,7 +11,7 @@ terraform {
 # Ref: https://registry.terraform.io/providers/vmware/vcd/latest/docs
 provider "vcd" {
   user                  = "sccmadmkp11"
-  password              = "Gthtgjkj["
+  password              = "Pa$$w0rd"
   org                   = "rukavishnikov"
   vdc                   = "vdcrukavishnikov"
   url                   = "https://vcd.kp11.ru/api"
