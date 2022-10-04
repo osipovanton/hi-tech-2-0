@@ -850,7 +850,6 @@ Finish
 
 ## Групповая политика NTP
 Создаем групповую политику и указываем имя
-![image](https://user-images.githubusercontent.com/79700810/193024684-75b18669-32ba-4277-96d4-679a4edfd1fb.png)
 ![image](https://user-images.githubusercontent.com/79700810/193024793-9e0e1c4e-39e0-4ba1-853e-38a80ad32277.png)
 Переходим в 
 `Computer Configuration > Policies > Administrative Templates > System > Windows Time
