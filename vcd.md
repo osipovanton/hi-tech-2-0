@@ -206,8 +206,8 @@ vApp состоит из одной или нескольких виртуаль
 Для загрузки провайдера необхоимо создать файл main.tf 
 
 
-main
-'''terraform
+
+```terraform
 terraform {
   # Ref: https://registry.terraform.io/providers/vmware/vcd/latest/docs  
   required_providers {
@@ -228,7 +228,7 @@ provider "vcd" {
   allow_unverified_ssl  = true
   max_retry_timeout     = 240
 }
-'''
+```
 
 ![image](https://user-images.githubusercontent.com/79700810/193747840-0eda74a1-e26f-4188-a0f0-95f1d626f93d.png)
 
