@@ -1,5 +1,5 @@
 
-# Лабораторная работа 1
+# Лабораторная работа 2
 ## Общие требования
 
 ![image](https://user-images.githubusercontent.com/79700810/193747168-ac17aac2-d157-487a-bfc6-f4eced568ea7.png)
