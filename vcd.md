@@ -206,8 +206,7 @@ vApp состоит из одной или нескольких виртуаль
 Для загрузки провайдера необхоимо создать файл main.tf 
 
 
-main
-'''terraform
+'''
 terraform {
   # Ref: https://registry.terraform.io/providers/vmware/vcd/latest/docs  
   required_providers {
