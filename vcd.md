@@ -243,7 +243,7 @@ provider "vcd" {
 
 Для создания vApp1 необходимо создать файл vApp1.tf и указать следующие параметры
 
-'''terraform
+'''
 resource "vcd_vapp" "web" {
   name = "web"
 
