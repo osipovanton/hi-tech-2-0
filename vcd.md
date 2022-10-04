@@ -206,8 +206,8 @@ vApp состоит из одной или нескольких виртуаль
 Для загрузки провайдера необхоимо создать файл main.tf 
 
 
-
-```terraform
+main
+'''terraform
 terraform {
   # Ref: https://registry.terraform.io/providers/vmware/vcd/latest/docs  
   required_providers {
@@ -228,7 +228,7 @@ provider "vcd" {
   allow_unverified_ssl  = true
   max_retry_timeout     = 240
 }
-```
+'''
 
 ![image](https://user-images.githubusercontent.com/79700810/193747840-0eda74a1-e26f-4188-a0f0-95f1d626f93d.png)
 
@@ -243,7 +243,7 @@ provider "vcd" {
 
 Для создания vApp1 необходимо создать файл vApp1.tf и указать следующие параметры
 
-'''
+```
 resource "vcd_vapp" "web" {
   name = "web"
 
@@ -261,13 +261,13 @@ resource "vcd_vapp_network" "vappNet" {
   }
 
 }
-'''
+```
 
 ![image](https://user-images.githubusercontent.com/79700810/193747868-ea1f3282-7da9-4d36-bb53-3bad2712a713.png)
 
 ## Создание ВМ
 
-'''terraform
+```
 resource "vcd_vapp_vm" "TestVm" {
 
   vapp_name = vcd_vapp.web.name
@@ -285,14 +285,14 @@ resource "vcd_vapp_vm" "TestVm" {
     is_primary         = true
   }
 }
-'''
+```
 
 ![image](https://user-images.githubusercontent.com/79700810/193747892-3ffbef72-7042-4dcd-8d56-5a215033fdef.png)
 
 # Создание vAPP2
 ## Создание vApp и подключение существующей сети OrgVDC к которой подключена ВМ и получает IP адрес через Static IP Pools
 
-'''terraform
+```
 data "vcd_network_routed" "net" {
   name = "local"
 }
@@ -305,12 +305,12 @@ resource "vcd_vapp_org_network" "routed-net" {
   vapp_name        = vcd_vapp.web2.name
   org_network_name = data.vcd_network_routed.net.name
 }
-'''
+```
 
 ![image](https://user-images.githubusercontent.com/79700810/193747920-5922714a-2b51-4009-8fdb-918d0b51118a.png)
 
 ## Создание ВМ
-'''terraform
+```
 resource "vcd_vapp_vm" "TestVm2" {
 
   vapp_name = vcd_vapp.web2.name
@@ -328,7 +328,7 @@ resource "vcd_vapp_vm" "TestVm2" {
     is_primary         = true
   }
 }
-'''
+```
 ![image](https://user-images.githubusercontent.com/79700810/193747938-1e9410b7-6c59-422d-8914-74c391d30763.png)
 
 # Terraform plan
@@ -363,36 +363,37 @@ resource "vcd_vapp_vm" "TestVm2" {
 ![image](https://user-images.githubusercontent.com/79700810/193748160-9d0b6cdb-bea8-4ccf-a1d4-6cdbe8e2276a.png)
 
 Далее необходимо установить необходимые пакеты
-'''
+```
 yum install -y yum-utils
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum install docker-ce
-'''
-'''
+```
+```
 docker pull nginx
 docker images
 docker run --name app1 -p 8080:80 -d nginx
 docker run --name app2 -p 8081:80 -d nginx
-'''
-'''
+```
+```
 curl http://192.168.78.10:8080
 curl http://192.168.78.10:8081
-'''
-'''
+```
+```
 docker ps
-
 docker stop app1
 docker stop app2
-
 docker rm app1
 docker rm app2
-'''
-'''
+```
+```
 docker ps
-'''
+```
+
+Далее создаем ещё один vApp с сетью OrgVDC внутри которого создаем ВМ с ОС Windows
 
 ![image](https://user-images.githubusercontent.com/79700810/193748184-3ac58acf-d8dc-4b21-a9e0-131bbcdd1b04.png)
 
+Проверяем работу контейнеров Docker
 
 ![image](https://user-images.githubusercontent.com/79700810/193748195-4ae0fc00-d1e5-4cd7-91c4-6048f10b3ace.png)
 
