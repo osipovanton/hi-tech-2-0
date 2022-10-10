@@ -4,7 +4,8 @@
 ## Общие требования 
 
 
-![LL-Страница 7 (1)](https://user-images.githubusercontent.com/79700810/193062856-4ac1df3c-570b-41c1-97d2-5f1c7ab0e7af.jpg)
+![LL-Страница 7 (6)](https://user-images.githubusercontent.com/79700810/194850782-11114aad-31e1-4728-98e9-dff88755835f.jpg)
+
 
 
 
