@@ -115,15 +115,99 @@ sysctl -p
 | systemctl reload nginx            | systemctl reload nginx             |systemctl reload nginx           | 
 
 
+## Настройка DNS CloudServices
+
+### Создание деректории и назначение прав
+
+```
+mkdir /opt/dns
+cp /etc/bind/db.local /opt/dns/demo.db
+chown -R bind:bind /opt/dns
+```
+
+## Настройка SELINUX
+
+```
+nano /etc/apparmor.d/usr.sbin.named
+```
+/opt/dns/** rw,
+
+![image](https://user-images.githubusercontent.com/79700810/195083701-31d10750-b0c9-4222-ae02-c39b363f7b02.png)
+
+```
+systemctl restart apparmor.service
+```
+
+## Настройка Зоны
+
+```
+nano /etc/bind/named.conf.default-zones
+```
+
+zone "ht2022.wsr" {
+   type master;
+   file "/opt/dns/demo.db";
+};
+
+![image](https://user-images.githubusercontent.com/79700810/195083880-a5f642fa-974e-4473-9394-c68cd78e3940.png)
+
+
+## Добавление записей
+```
+nano /opt/dns/demo.db
+```
+
+@ IN SOA ns.ht2022.wsr. root.localhost.(
+
+### 192.168.255.153 -  CloudServices
+### 192.168.255.82  -  R1
+### 192.168.255.2  -  R2
+### 192.168.255.209  -  R3
+
+@     IN   NS    ns.ht2022.wsr.
+@     IN   A     192.168.255.153  
+ns    IN   A     192.168.255.153  
+r1     IN   A     192.168.255.82
+r2     IN   A     192.168.255.2
+r3     IN   A     192.168.255.209
+
+
+![image](https://user-images.githubusercontent.com/79700810/195084127-98e3b5ce-b3c2-41af-8ab0-d3f6e5de41c4.png)
 
 
 
+## Настройка Resolved 
+
+```
+systemctl disable systemd-resolved.service
+systemctl stop systemd-resolved
+rm /etc/dhcp/dhclient-enter-hooks.d/resolved
+```
+
+```
+nano /etc/resolv.conf
+```
+nameserver 127.0.0.1
+
+![image](https://user-images.githubusercontent.com/79700810/195084405-05dfa252-23fa-48bf-b663-aad8196b2759.png)
 
 
 
+## Проверка на CLI
+
+### ip address 192.168.255.153 - CloudServices
+
+```
+vi /etc/resolv.conf 
+```
+nameserver 192.168.255.153
+
+![image](https://user-images.githubusercontent.com/79700810/195084726-4c5a3823-4014-4fd2-bf2c-0a4ce9fdebc5.png)
 
 
+![image](https://user-images.githubusercontent.com/79700810/195085050-f290b9b6-ae0e-4158-80e5-dc06e7fd544d.png)
 
 
+![image](https://user-images.githubusercontent.com/79700810/195085076-421f1f01-5a6e-46d2-8db0-abe9ce25b051.png)
 
-
+![image](https://user-images.githubusercontent.com/79700810/195085138-94d0c9f2-64da-4d8c-8b10-04af10c4a1d6.png)
