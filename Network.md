@@ -100,7 +100,7 @@ sysctl -p
 |access-list 1 permit 192.168.11.0 0.0.0.255    |access-list 1 permit 192.168.12.0 0.0.0.255     |access-list 1 permit 192.168.13.0 0.0.0.255  |
 |ip nat inside source list 1 interface Gi0/0 overload    |ip nat inside source list 1 interface Gi0/0 overload     |ip nat inside source list 1 interface Gi0/0 overload |
 |!    |!     |!  |
-|ip nat inside source static tcp 192.168.11.2 80 10.10.11.1 80    |ip nat inside source static tcp 192.168.12.2 80 192.168.255.2 80     | ip nat inside source static tcp 192.168.13.2 80 192.168.255.209 80  |
+|ip nat inside source static tcp 192.168.11.2 80 192.168.255.82 80    |ip nat inside source static tcp 192.168.12.2 80 192.168.255.2 80     | ip nat inside source static tcp 192.168.13.2 80 192.168.255.209 80  |
 
 
 
