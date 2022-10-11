@@ -211,3 +211,30 @@ nameserver 192.168.255.153
 ![image](https://user-images.githubusercontent.com/79700810/195085076-421f1f01-5a6e-46d2-8db0-abe9ce25b051.png)
 
 ![image](https://user-images.githubusercontent.com/79700810/195085138-94d0c9f2-64da-4d8c-8b10-04af10c4a1d6.png)
+
+
+## Базовая Конфигурация Load Balancer 
+
+```
+nano /etc/nginx/sites-enabled/default
+```
+upstream backend {
+	server r1.ht2022.wsr fail_timeout=10;
+	server r2.ht2022.wsr fail_timeout=10;
+	server r3.ht2022.wsr fail_timeout=10;
+}
+
+server {
+	listen 80 default_server;
+	server_name ht2022.wsr;
+	location / {
+		proxy_pass http://backend ;
+	}
+}
+
+![image](https://user-images.githubusercontent.com/79700810/195085709-16255377-b082-44c8-9287-c3939cca81d7.png)
+
+
+
+
+
