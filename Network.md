@@ -235,6 +235,10 @@ server {
 ![image](https://user-images.githubusercontent.com/79700810/195085709-16255377-b082-44c8-9287-c3939cca81d7.png)
 
 
+## Проверка на CLI
+
+![image](https://user-images.githubusercontent.com/79700810/195085976-7de47d95-09f4-41a2-bac0-1c0af094687c.png)
+
 
 
 
