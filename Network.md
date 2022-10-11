@@ -224,6 +224,7 @@ nameserver 192.168.255.153
 ```
 nano /etc/nginx/sites-enabled/default
 ```
+```
 upstream backend {
 
 	server r1.ht2022.wsr fail_timeout=10;
@@ -247,7 +248,7 @@ server {
 	}
 	
 }
-
+```
 
 ![image](https://user-images.githubusercontent.com/79700810/195085709-16255377-b082-44c8-9287-c3939cca81d7.png)
 
