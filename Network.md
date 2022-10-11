@@ -242,3 +242,38 @@ server {
 
 
 
+## Настройка GRE R1, R2, R3
+
+### ip address 192.168.255.82 -   R1 G0/0 
+### ip address 192.168.255.2 -   R2 G0/0 
+### ip address 192.168.255.209 -   R3 G0/0 
+
+| R1              | R2             |R3             | 
+| -------------         | -------------         | -------------         |
+|interface Tunne 1     |interface Tunne1     |interface Tunne2    |
+|ip address 172.16.1.1 255.255.255.0|ip address 172.16.1.2 255.255.255.0|ip address 172.16.2.2 255.255.255.0|
+|tunnel mode gre ip|tunnel mode gre ip|tunnel mode gre ip|
+|tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|
+|tunnel destination 192.168.255.2|tunnel destination 192.168.255.209|tunnel destination 192.168.255.82|
+|exit|exit|exit|
+|interface Tunne 2     |interface Tunne3     |interface Tunne3     |
+|ip address 172.16.2.1 255.255.255.0|ip address 172.16.3.1 255.255.255.0|ip address 172.16.3.2 255.255.255.0|
+|tunnel mode gre ip|tunnel mode gre ip|tunnel mode gre ip|
+|tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|
+|tunnel destination 192.168.255.209|tunnel destination 192.168.255.209|tunnel destination 192.168.255.2|
+|exit|exit|exit|
+
+
+
+# Настройка BGP R1, R2, R3
+
+
+| R1              | R2             |R3             | 
+| -------------         | -------------         | -------------         |
+|router bgp 65000    |router bgp 65001     |router bgp 65002   |
+|network 192.168.11.0 mask 255.255.255.0    |network 192.168.12.0 mask 255.255.255.0     |network 192.168.13.0 mask 255.255.255.0   |
+|network 172.16.1.0 mask 255.255.255.0    |network 172.16.1.0 mask 255.255.255.0     |network 172.16.1.0 mask 255.255.255.0   |
+|network 172.16.2.0 mask 255.255.255.0    |network 172.16.3.0 mask 255.255.255.0     |network 172.16.3.0 mask 255.255.255.0   |
+|neighbor 172.16.1.2 remote-as 65001    |neighbor 172.16.1.1 remote-as 65000    |neighbor 172.16.1.1 remote-as 65000   |
+|neighbor 172.16.2.2 remote-as 65002   |neighbor 172.16.3.2 remote-as 65002    |neighbor 172.16.2.2 remote-as 65001   |
+|exit    |exit    |exit   |
