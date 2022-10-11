@@ -277,3 +277,35 @@ server {
 |neighbor 172.16.1.2 remote-as 65001    |neighbor 172.16.1.1 remote-as 65000    |neighbor 172.16.1.1 remote-as 65000   |
 |neighbor 172.16.2.2 remote-as 65002   |neighbor 172.16.3.2 remote-as 65002    |neighbor 172.16.2.2 remote-as 65001   |
 |exit    |exit    |exit   |
+
+
+## Настройка ipsec ikev1 R1, R2, R3
+
+### ip address 192.168.255.82 -   R1 G0/0 
+### ip address 192.168.255.2 -   R2 G0/0 
+### ip address 192.168.255.209 -   R3 G0/0 
+
+| R1              | R2             |R3             | 
+| -------------         | -------------         | -------------         |
+|crypto isakmp policy 1    |crypto isakmp policy 1     |crypto isakmp policy 1   |
+|authentication pre-share    |authentication pre-share     |authentication pre-share   |
+|hash md5    |hash md5     |hash md5   |
+|encr 3des    |encr 3des     |encr 3des   |
+|group 2    |group 2     |group 2   |
+|lifetime 86400    |lifetime 86400     |lifetime 86400   |
+|!    |!     |!  |
+|crypto isakmp key CISCO123 address 192.168.255.2   |crypto isakmp key CISCO123 address 192.168.255.82    |crypto isakmp key CISCO123 address 192.168.255.82   |
+|crypto isakmp key CISCO123 address 192.168.255.209  |crypto isakmp key CISCO123 address 192.168.255.209     |crypto isakmp key CISCO123 address 192.168.255.2    |
+|!    |!     |!  |
+|crypto ipsec transform-set GRE esp-3des esp-md5-hmac    |crypto ipsec transform-set GRE esp-3des esp-md5-hmac     |crypto ipsec transform-set GRE esp-3des esp-md5-hmac  |
+|mode tunnel    |mode tunnel     |mode tunnel  |
+|crypto ipsec profile GRE-IPSEC    |crypto ipsec profile GRE-IPSEC     |crypto ipsec profile GRE-IPSEC  |
+|set transform-set GRE    |set transform-set GRE     |set transform-set GRE  |
+|!    |!     |!  |
+|interface tunnel 1    |interface tunnel 1     |interface tunnel 2  |
+|tunnel protection ipsec profile GRE-IPSEC    |tunnel protection ipsec profile GRE-IPSEC     |tunnel protection ipsec profile GRE-IPSEC  |
+|interface tunnel 2    |interface tunnel 3    |interface tunnel 3 |
+|tunnel protection ipsec profile GRE-IPSEC    |tunnel protection ipsec profile GRE-IPSEC     |tunnel protection ipsec profile GRE-IPSEC  |
+|exit    |exit     |exit  |
+
+
