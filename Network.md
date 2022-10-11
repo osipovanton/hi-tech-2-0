@@ -165,11 +165,17 @@ nano /opt/dns/demo.db
 ### 192.168.255.209  -  R3
 
 @     IN   NS    ns.ht2022.wsr.
+
 @     IN   A     192.168.255.153  
+
 ns    IN   A     192.168.255.153  
+
 r1     IN   A     192.168.255.82
+
 r2     IN   A     192.168.255.2
+
 r3     IN   A     192.168.255.209
+
 
 
 ![image](https://user-images.githubusercontent.com/79700810/195084127-98e3b5ce-b3c2-41af-8ab0-d3f6e5de41c4.png)
