@@ -80,7 +80,25 @@ sysctl -p
 |dns-server 192.168.255.153    |dns-server 192.168.255.153     |dns-server 192.168.255.153  |
 
 
+## Настройка NAT R1, R2, R3
 
+### ip address 192.168.11.2   -   SRV1
+### ip address 192.168.255.82 -   R1 G0/0 
+### ip address 192.168.255.2 -   R2 G0/0 
+### ip address 192.168.255.209 -   R3 G0/0 
+
+| R1              | R2             |R3             | 
+| -------------         | -------------         | -------------         |
+|interface Gi0/1    |interface Gi0/1     |interface Gi0/1  |
+|ip nat inside    |ip nat inside     |ip nat inside  |
+|!    |!     |!  |
+|interface Gi0/0    |interface Gi0/0     |interface Gi0/0  |
+|ip nat outside    |ip nat outside     |ip nat outside  |
+|!    |!     |!  |
+|access-list 1 permit 192.168.11.0 0.0.0.255    |access-list 1 permit 192.168.12.0 0.0.0.255     |access-list 1 permit 192.168.13.0 0.0.0.255  |
+|ip nat inside source list 1 interface Gi0/0 overload    |ip nat inside source list 1 interface Gi0/0 overload     |ip nat inside source list 1 interface Gi0/0 overload |
+|!    |!     |!  |
+|ip nat inside source static tcp 192.168.11.2 80 10.10.11.1 80    |ip nat inside source static tcp 192.168.12.2 80 192.168.255.2 80     | ip nat inside source static tcp 192.168.13.2 80 192.168.255.209 80  |
 
 #R1
 ### 192.168.255.153 - CloudServices
