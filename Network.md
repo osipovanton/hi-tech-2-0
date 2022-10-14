@@ -212,7 +212,10 @@ nameserver 127.0.0.1
 ### ip address 192.168.255.153 - CloudServices
 
 ```
+sudo -i
 vi /etc/resolv.conf 
+chattr +i /etc/resolv.conf
+reboot
 ```
 nameserver 192.168.255.153
 
