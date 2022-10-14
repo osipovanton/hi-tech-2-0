@@ -263,6 +263,9 @@ server {
 
 ![image](https://user-images.githubusercontent.com/79700810/195085709-16255377-b082-44c8-9287-c3939cca81d7.png)
 
+```
+systemctl reload nginx	
+```
 
 ## Проверка на CLI
 
