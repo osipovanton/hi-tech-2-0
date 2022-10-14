@@ -111,7 +111,6 @@ sysctl -p
 
 | SRV1              | SRV2             |SRV3             | 
 | -------------         | -------------         | -------------         |
-| -------------         | -------------         | -------------         |
 | hostnamectl set-hostname SRV1          | hostnamectl set-hostname SRV2           |hostnamectl set-hostname SRV3         | 
 | apt update            | apt update             |apt update           | 
 | apt install -y nginx            | apt install -y nginx             |apt install -y nginx          | 
