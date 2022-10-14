@@ -113,6 +113,7 @@ sysctl -p
 | -------------         | -------------         | -------------         |
 | sudo -i         | sudo -i         | sudo -i        |
 | hostnamectl set-hostname SRV1          | hostnamectl set-hostname SRV2           |hostnamectl set-hostname SRV3         | 
+| netplan apply         | netplan apply         | netplan apply        |
 | apt update            | apt update             |apt update           | 
 | apt install -y nginx            | apt install -y nginx             |apt install -y nginx          | 
 | echo SRV1 > /var/www/html/index.html           | echo SRV2 > /var/www/html/index.html             |echo SRV3 > /var/www/html/index.html           | 
