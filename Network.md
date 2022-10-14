@@ -71,12 +71,15 @@ sysctl -p
 
 ## Настройка DHCP
 ### ip address 192.168.255.153 - CloudServices
+### ip address 192.168.11.1 -   R1 G0/1 
+### ip address 192.168.12.1 -   R2 G0/1
+### ip address 192.168.13.1-   R3 G0/1 
 
 | R1              | R2             |R3             | 
 | -------------         | -------------         | -------------         |
 |ip dhcp pool SRV1    |ip dhcp pool SRV2     |ip dhcp pool SRV3  |
 |network 192.168.11.0 255.255.255.0    |network 192.168.12.0 255.255.255.0     |network 192.168.13.0 255.255.255.0  |
-|default-router 192.168.255.153    |default-router 192.168.255.153     |default-router 192.168.255.153  |
+|default-router 192.168.11.1    |default-router 192.168.12.1     |default-router 192.168.13.1  |
 |dns-server 192.168.255.153    |dns-server 192.168.255.153     |dns-server 192.168.255.153  |
 
 
