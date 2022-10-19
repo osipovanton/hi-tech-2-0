@@ -292,7 +292,7 @@ systemctl reload nginx
 |ip address 172.16.2.1 255.255.255.0|ip address 172.16.3.1 255.255.255.0|ip address 172.16.3.2 255.255.255.0|
 |tunnel mode gre ip|tunnel mode gre ip|tunnel mode gre ip|
 |tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|tunnel source gigabitEthernet 0/0|
-|tunnel destination 192.168.255.209|tunnel destination 192.168.255.209|tunnel destination 192.168.255.2|
+|tunnel destination 192.168.255.209|tunnel destination 192.168.255.82|tunnel destination 192.168.255.2|
 |exit|exit|exit|
 
 
