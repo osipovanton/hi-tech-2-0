@@ -50,5 +50,62 @@
 
 ### Настройка шаблона для слонирования 
 
+![image](https://user-images.githubusercontent.com/79700810/198210357-08abe0c4-9b9e-4af1-a546-ee5426e564a8.png)
 
+![image](https://user-images.githubusercontent.com/79700810/198210549-754cf55c-a378-4ad4-ac49-c69ce1cb92ca.png)
+
+Убедиться, что файл /etc/apt/sources.list содержит следующие строки,
+при необходимости — добавить, если имеются другие записи, то закомментировать их или удалить
+
+```
 nano /etc/apt/sources.list
+```
+
+```
+deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib
+
+deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-extended 1.7_x86-64 main contrib non-free
+```
+
+![image](https://user-images.githubusercontent.com/79700810/198210691-b91d3586-963f-4f4b-b48b-00bcb59a7780.png)
+
+подключить репозиторий aldpro, выполнив в терминале команды
+
+```
+echo -e "deb https://download.astralinux.ru/aldpro/stable/repository-main/ 1.0.0 main" | sudo tee /etc/apt/sources.list.d/aldpro.list
+
+echo -e "deb https://download.astralinux.ru/aldpro/stable/repository-extended/ generic main" | sudo tee -a /etc/apt/sources.list.d/aldpro.list
+```
+
+![image](https://user-images.githubusercontent.com/79700810/198211039-745b7244-1159-4838-a977-9d308a84344c.png)
+
+
+добавить конфигурационный файл /etc/apt/preferences.d/aldpro настроек приоритета apt со следующим содержимым:
+
+```
+nano /etc/apt/preferences.d/aldpro
+```
+
+```
+Package: *
+Pin: release n=generic
+Pin-Priority: 900
+```
+
+![image](https://user-images.githubusercontent.com/79700810/198211110-9fa548fb-38a2-4614-a383-fe141de33ba6.png)
+
+
+обновить пакеты, выполнив в терминале команду
+
+```
+apt update
+apt upgrade
+```
+
+На сервере, подготовленном для развертывания контроллера домена, необходимо
+выполнить в терминале команду
+
+```
+DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
+```
+
