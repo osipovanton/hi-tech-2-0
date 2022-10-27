@@ -106,6 +106,14 @@ apt update
 apt upgrade
 ```
 
+
+```
+apt install -y open-vm-tools
+```
+
+
+![image](https://user-images.githubusercontent.com/79700810/198218196-a81bf25a-ec29-44e9-ad58-6b42be1e9ce4.png)
+
 На сервере, подготовленном для развертывания контроллера домена, необходимо
 выполнить в терминале команду
 
