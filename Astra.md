@@ -48,7 +48,7 @@
 ![image](https://user-images.githubusercontent.com/79700810/198209891-d26b22c8-3a1c-4945-b52b-3d927fe42b0f.png)
 
 
-### Настройка шаблона для слонирования 
+### Настройка шаблона для клонирования 
 
 ![image](https://user-images.githubusercontent.com/79700810/198210357-08abe0c4-9b9e-4af1-a546-ee5426e564a8.png)
 
