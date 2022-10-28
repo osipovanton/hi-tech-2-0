@@ -417,10 +417,6 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 reboot
 ```
 
-На DC1 после перезагрузки
-
-![image](https://user-images.githubusercontent.com/79700810/198526436-9933efcb-1737-4294-97df-3f0ec801a3c8.png)
-
 
 Настройка журнала событий
 
@@ -501,9 +497,6 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 reboot
 ```
 
-На DC1 после перезагрузки
-
-![image](https://user-images.githubusercontent.com/79700810/198530390-d2632984-e9f5-4d3b-af2f-f80741890b13.png)
 
 Настройка Мониторинга 
 
@@ -581,9 +574,7 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 reboot
 ```
 
-На DC1 после перезагрузки
 
-![image](https://user-images.githubusercontent.com/79700810/198535358-f1c795c7-7c79-4d96-868d-e2ce22e772ae.png)
 
 Настройка общего доступа к файлам
 
