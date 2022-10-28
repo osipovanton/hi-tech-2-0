@@ -480,6 +480,8 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 reboot
 ```
 
+На DC1 после перезагрузки
+
 ![image](https://user-images.githubusercontent.com/79700810/198530390-d2632984-e9f5-4d3b-af2f-f80741890b13.png)
 
 Настройка Мониторинга 
@@ -553,6 +555,48 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 ```
 reboot
 ```
+
+На DC1 после перезагрузки
+
+![image](https://user-images.githubusercontent.com/79700810/198535358-f1c795c7-7c79-4d96-868d-e2ce22e772ae.png)
+
+Настройка общего доступа к файлам
+
+![image](https://user-images.githubusercontent.com/79700810/198535578-60fe8b34-ebcd-40c7-a1e0-b7204b3ccfcf.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198535718-b76baa3c-079e-4d25-baf6-9ef48187f620.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198535772-be50c802-d623-4be6-8fe9-5cc106f81698.png)
+
+
+Настройка прав на общей ресурс
+
+![image](https://user-images.githubusercontent.com/79700810/198535992-8a0f1871-87ec-41ef-9f6d-d6156d75671a.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198536190-fe935f2a-6d8f-4398-81eb-21fd73fe8a15.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198536253-c3a55ee8-8077-4863-b6c3-1f521886217b.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198536508-85793be3-a6f5-4e6b-9a1c-a4f946be5827.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198536373-cd9df3b0-68a3-4d1f-9582-571ca21d32b9.png)
+
+
+На пользователя
+
+![image](https://user-images.githubusercontent.com/79700810/198536662-336cd431-fbc1-4851-b15a-2a89cf1852b1.png)
+
+На группу 
+![image](https://user-images.githubusercontent.com/79700810/198536992-14858095-8e16-4970-b130-e35bba667be1.png)
+
+
+
+Итог 
+![image](https://user-images.githubusercontent.com/79700810/198536893-58d7d2ca-b3a6-4b3a-9ce5-10ecdece0bd2.png)
+
 
 
 !!!!!!!!!!!!!!!!!!!!
