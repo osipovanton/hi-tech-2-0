@@ -28,7 +28,32 @@
 15) CI/CD для приложений
 
 
+### Создание виртуальноый машины 
+
+![image](https://user-images.githubusercontent.com/79700810/198566202-7daa2b4d-6db1-471b-a5ee-aa7f0f9deb14.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198566462-fac892a6-608d-4c5b-822d-a2b951171d6e.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198566551-3103acea-327a-4ff2-a879-36d6e3706f06.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198566690-f0c25168-1155-414b-ac9c-d50c4e1ffbb1.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198566706-2d0d3b0e-3ca7-43d7-924a-8ed261ec8fdf.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198566821-91b356f1-29c7-4541-acf7-fdb5d12c3cea.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198566951-6a26b9b1-bbc1-4569-8923-9c38720e09a9.png)
+
+
+или использовать VM Network
+![image](https://user-images.githubusercontent.com/79700810/198567056-7a8a67d0-6640-4e51-8cb4-2c9d5a6bb0bb.png)
+
+
 ### Установка
+
 
 Установка дистрибутива с помощью графического интерфейса
 
