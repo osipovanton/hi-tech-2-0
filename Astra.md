@@ -145,6 +145,25 @@ DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
 ```
 
 
+### Создание изолированного сегмента сети
+
+![image](https://user-images.githubusercontent.com/79700810/198565009-e968e654-57b1-4894-9279-c533ffeb9bcf.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198565048-751dc557-f38a-4076-9f88-ff8dead77df5.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198565116-1a912541-7eae-426e-9a7a-e3f7177d4fdf.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198565146-af0e9533-2d2a-4fcf-a5e2-1fd1d17f9607.png)
+
+
+
+### Настройка трафика
+
+![image](https://user-images.githubusercontent.com/79700810/198565366-b6c19478-b8ff-4ca1-b336-458acc57a072.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198565428-adf44227-603a-4699-8702-734a631f28fb.png)
+
+
 ### Создание виртуальный машины DC1 из шаблона 
 
 ![image](https://user-images.githubusercontent.com/79700810/198517553-86aea054-cd50-4613-96f4-34986e6ab5fa.png)
