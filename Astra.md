@@ -742,6 +742,34 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198547402-ed017db1-eda3-442a-938d-f8b67f90fbd2.png)
 
 
+Создание группы компьютеров 
+
+![image](https://user-images.githubusercontent.com/79700810/198569025-55a10364-ad99-40a1-8d8d-f3584bf3b437.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198569110-51a4ebb5-eef1-4533-a779-9b037caa8820.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198569427-42933005-2a10-4f7f-aea6-c8d9ff310f24.png)
+
+Добавление компьютеров в группу
+
+![image](https://user-images.githubusercontent.com/79700810/198569515-7e103271-f2a0-4a3d-9034-ba3d3c174289.png)
+
+
+Создание групповой политики для компьютера 
+
+
+![image](https://user-images.githubusercontent.com/79700810/198573408-a39eb773-9076-4b91-80ed-6ce643900953.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198573351-fa18abf8-94df-4fd1-9bda-d17ae6c0bb23.png)
+
+Таргетирование на подразделение
+
+![image](https://user-images.githubusercontent.com/79700810/198573488-9214d188-fa6a-429f-87d9-044f6df906bd.png)
+
+
+
 ### Базы данных по аналогии DB1/WEB/DB2/WEB/DB3/WEB/JEN/Client1
 !!!!!!!!!!!!!!!!!!!!
 DB1
