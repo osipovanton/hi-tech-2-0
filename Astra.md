@@ -332,6 +332,9 @@ nano /etc/hostname
 audit.domain.test
 ```
 
+![image](https://user-images.githubusercontent.com/79700810/198525464-82a0a7c6-b083-4db3-ba81-bf9c7f9e11e7.png)
+
+
 ```
 nano /etc/hosts
 ```
@@ -341,6 +344,11 @@ nano /etc/hosts
 127.0.1.1 audit
 ```
 
+
+
+![image](https://user-images.githubusercontent.com/79700810/198525625-ec7ba768-5abe-4e98-b213-61a45b5b3574.png)
+
+
 ```
 nano /etc/resolv.conf
 ```
@@ -349,6 +357,9 @@ nano /etc/resolv.conf
 search domain.test
 nameserver 172.30.10.10
 ```
+
+![image](https://user-images.githubusercontent.com/79700810/198525770-918bc968-4338-497f-a43a-b1a1c99d9ae3.png)
+
 
 ```
 systemctl stop network-manager
@@ -369,17 +380,32 @@ dns-nameservers 172.30.10.10
 dns-search domain.test
 ```
 
+![image](https://user-images.githubusercontent.com/79700810/198526053-914802d3-d57a-4f40-b7df-69efd1756756.png)
+
+
+
 ```
 systemctl restart networking
 ```
 
 ```
-sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d mon -i -f
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d audit -i -f
 ```
 
 ```
 reboot
 ```
+
+На DC1 после перезагрузки
+
+![image](https://user-images.githubusercontent.com/79700810/198526436-9933efcb-1737-4294-97df-3f0ec801a3c8.png)
+
+
+Настройка журнала событий
+
+![image](https://user-images.githubusercontent.com/79700810/198526559-31c051c1-55d7-48a7-8c0b-5d4436d3861a.png)
+
+
 
 !!!!!!!!!!!!!!!!!!!!
 ### MON
