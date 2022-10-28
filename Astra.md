@@ -241,6 +241,25 @@ sysctl -p
 ![image](https://user-images.githubusercontent.com/79700810/198518839-010cb036-16ed-4c78-918e-ec72a68eb827.png)
 
 
+
+### Создание виртуальный машины DC2 из шаблона
+
+![image](https://user-images.githubusercontent.com/79700810/198517553-86aea054-cd50-4613-96f4-34986e6ab5fa.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198517829-ce1d18b6-e7f2-4c51-9677-f74f08b62817.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198537903-9a7b4f97-b9ba-4144-ab62-55fe8da0ac0a.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198517986-2807697a-9082-4d21-a8b9-0c98df9a7378.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198518104-4314a8d6-df4d-4218-96a1-867c96e0fee1.png)
+
+Меняем интерфейс на VLAN10
+![image](https://user-images.githubusercontent.com/79700810/198537984-ef9be891-3549-4881-b868-91b0550c28b0.png)
+
+
 !!!!!!!!!!!!!!!!!!!!
 ### DC2
 !!!!!!!!!!!!!!!!!!!!
