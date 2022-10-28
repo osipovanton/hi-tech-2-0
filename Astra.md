@@ -703,5 +703,64 @@ reboot
 
 
 
+### Управление организационной структурой подразделениями
+
+
+![image](https://user-images.githubusercontent.com/79700810/198543644-e5821ea2-7080-45d7-936c-9bfab18e50e3.png)
+
+
+Создание подразделения
+
+![image](https://user-images.githubusercontent.com/79700810/198543860-890e3701-0430-408b-aa6e-a18190a80f4c.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198543980-c1940813-7594-42df-b7ec-a1b9a7fe27ec.png)
+
+
+Создание пользователей в подразделении
+
+![image](https://user-images.githubusercontent.com/79700810/198544399-7f92359b-874d-4ee6-8dac-48942790f1f8.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198544615-0415132c-d320-400c-a2a2-db2a00d92aef.png)
+
+
+Создание группы в подразделении
+
+![image](https://user-images.githubusercontent.com/79700810/198544668-b0c3d549-6237-43e6-a667-2faa1dae4807.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198544792-9b96f15f-99e5-4293-b92f-4fc48861fb18.png)
+
+Добавление пользователя в группу
+
+![image](https://user-images.githubusercontent.com/79700810/198544903-bb12d9cf-5a03-43fd-a940-352ccac89d38.png)
+
+### Управление групповыми политиками
+
+![image](https://user-images.githubusercontent.com/79700810/198545620-7a46f4b3-edca-415d-9f39-56a1ca113363.png)
+
+
+
+![image](https://user-images.githubusercontent.com/79700810/198545760-9d089f59-666d-42b1-a28a-86b39651aaac.png)
+
+Политика на пользователя
+
+![image](https://user-images.githubusercontent.com/79700810/198546301-9e6d44ab-bbe0-46e0-93d7-593de2ea19c4.png)
+
+Подсказки заполнения полей
+
+![image](https://user-images.githubusercontent.com/79700810/198546412-b9704c54-50c7-4951-a84b-9010ff6963f9.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198546821-6c54f056-7732-450e-9610-acb948d18a5f.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198546965-ba488c92-519e-4b9e-ac1d-697e7d9d105d.png)
+
+
+таргетирование на подразделение
+
+![image](https://user-images.githubusercontent.com/79700810/198547329-c088b6ca-2d79-4e78-9575-c4b8a1c30aa7.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198547402-ed017db1-eda3-442a-938d-f8b67f90fbd2.png)
 
 
