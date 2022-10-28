@@ -1,7 +1,9 @@
 ## Лабораторная работа 5
 
 
-![DEMO2022azure-Страница 7 (4)](https://user-images.githubusercontent.com/79700810/198542796-ff778d41-c486-4852-adfc-7e6edad5fa74.jpg)
+
+![DEMO2022azure-Страница 7 (6)](https://user-images.githubusercontent.com/79700810/198557685-4ce354d5-6e00-4c7a-bba5-33ea03cb6cf5.jpg)
+
 
 
 
@@ -622,86 +624,6 @@ reboot
 
 
 
-!!!!!!!!!!!!!!!!!!!!
-### DHCP
-!!!!!!!!!!!!!!!!!!!!
-
-```
-nano /etc/hostname
-```
-
-```
-dhcp.domain.test
-```
-
-```
-nano /etc/hosts
-```
-
-```
-127.0.0.1 localhost
-127.0.1.1 dhcp
-```
-
-```
-nano /etc/resolv.conf
-```
-
-```
-search domain.test
-nameserver 172.30.10.10
-```
-
-```
-systemctl stop network-manager
-systemctl disable network-manager
-```
-
-```
-nano  /etc/network/interfaces
-```
-
-```
-auto eth0
-iface eth0 inet static
-address 172.30.10.15
-netmask 255.255.255.0
-gateway 172.30.10.10
-dns-nameservers 172.30.10.10
-dns-search domain.test
-```
-
-```
-systemctl restart networking
-```
-
-```
-sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d dhcp -i -f
-```
-
-```
-reboot
-```
-
-На DC1 после перезагрузки
-
-
-![image](https://user-images.githubusercontent.com/79700810/198539077-e04fb70d-6db1-44a3-9578-b1eb176a2e97.png)
-
-Настройка DHCP
-
-
-![image](https://user-images.githubusercontent.com/79700810/198539527-6a2fccda-f743-4fcc-b4cc-b9ccb8a8dfc5.png)
-
-
-![image](https://user-images.githubusercontent.com/79700810/198539702-013b724a-c9c6-40c5-9f8d-b9f876aecc9f.png)
-
-![image](https://user-images.githubusercontent.com/79700810/198539820-17d703dc-2418-4370-b14e-c5265b6108d0.png)
-
-
-
-
-
 
 ### Управление организационной структурой подразделениями
 
@@ -762,5 +684,68 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198547329-c088b6ca-2d79-4e78-9575-c4b8a1c30aa7.png)
 
 ![image](https://user-images.githubusercontent.com/79700810/198547402-ed017db1-eda3-442a-938d-f8b67f90fbd2.png)
+
+
+### Базы данных по аналогии DB1/WEB/DB2/WEB/DB3/WEB/JEN
+!!!!!!!!!!!!!!!!!!!!
+DB1
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+db1.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 db1
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.15
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d db1 -i -f
+```
+
+```
+reboot
+```
 
 
