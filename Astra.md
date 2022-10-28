@@ -308,6 +308,16 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198519150-7e5dc3b1-1812-48da-9810-2bc72aaafc6e.png)
 
 
+Настройка дополнительного контроллера домена
+
+![image](https://user-images.githubusercontent.com/79700810/198523686-5050e83d-e889-413c-9350-ce44c8f647a5.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198523818-d8b2f20a-d27e-4dd9-af53-6a9bd719df26.png)
+
+Выберете сервер и нажмите сохранить
+
+![image](https://user-images.githubusercontent.com/79700810/198523974-ca9a8024-b629-47d7-9bcc-eac0c6953fd9.png)
+
 
 
 !!!!!!!!!!!!!!!!!!!!
