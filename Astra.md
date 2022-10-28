@@ -122,7 +122,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
 ```
 
 
-### Создание VM из темплейта 
+### Создание виртуальный машины DC1 из шаблона 
 
 ![image](https://user-images.githubusercontent.com/79700810/198517553-86aea054-cd50-4613-96f4-34986e6ab5fa.png)
 
@@ -151,6 +151,8 @@ nano /etc/hostname
 dc1.domain.test
 ```
 
+![image](https://user-images.githubusercontent.com/79700810/198520511-77ce0590-9ee4-4fd4-a14e-6a6dd000a0e8.png)
+
 
 ```
 nano /etc/hosts
@@ -162,6 +164,10 @@ nano /etc/hosts
 127.0.1.1 dc1
 ```
 
+
+![image](https://user-images.githubusercontent.com/79700810/198520541-60d40950-91fd-4b56-9d94-c48a332df2ab.png)
+
+
 ```
 nano /etc/resolv.conf
 
@@ -171,6 +177,9 @@ nano /etc/resolv.conf
 search domain.test
 nameserver 127.0.0.1
 ```
+
+![image](https://user-images.githubusercontent.com/79700810/198520640-079c92c9-4ca3-4d6f-8386-897578f5c777.png)
+
 
 ```
 systemctl stop network-manager
@@ -197,6 +206,9 @@ netmask 255.255.255.0
 gateway 172.30.66.1
 ```
 
+![image](https://user-images.githubusercontent.com/79700810/198520716-97af4b73-d2d6-4b18-b914-7f875bb661ab.png)
+
+
 ```
 systemctl restart networking
 ```
@@ -219,6 +231,8 @@ nano /etc/sysctl.conf
 ```
 net.ipv4.ip_forward=1
 ```
+
+![image](https://user-images.githubusercontent.com/79700810/198520843-0c64a584-e20e-4922-8724-99406e0241fa.png)
 
 ```
 sysctl -p
