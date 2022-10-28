@@ -1,7 +1,7 @@
 ## Лабораторная работа 5
 
 
-![DEMO2022azure-Страница 7 (1)](https://user-images.githubusercontent.com/79700810/198216268-cd970195-4b31-46a0-9149-9d3d91038460.jpg)
+![DEMO2022azure-Страница 7 (2)](https://user-images.githubusercontent.com/79700810/198517174-0e3d27f0-14d1-4455-89c1-7aa44340cfe3.jpg)
 
 
 
@@ -119,5 +119,487 @@ apt install -y open-vm-tools
 
 ```
 DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
+```
+
+
+### Создание VM из темплейта 
+
+![image](https://user-images.githubusercontent.com/79700810/198517553-86aea054-cd50-4613-96f4-34986e6ab5fa.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198517829-ce1d18b6-e7f2-4c51-9677-f74f08b62817.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198517944-fe0302b2-cb18-4ac3-aff0-9837d4be45d5.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198517986-2807697a-9082-4d21-a8b9-0c98df9a7378.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198518104-4314a8d6-df4d-4218-96a1-867c96e0fee1.png)
+
+Добавляем второй интерфейс
+
+![image](https://user-images.githubusercontent.com/79700810/198518159-cb543bf8-84bd-4862-859e-4705d8a9bc67.png)
+
+
+!!!!!!!!!!!!!!!!!!!!
+### DC1
+!!!!!!!!!!!!!!!!!!!!
+```
+nano /etc/hostname
+```
+
+```
+dc1.domain.test
+```
+
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost.localdomain localhost
+172.30.10.10 dc1.domain.test dc1
+127.0.1.1 dc1
+```
+
+```
+nano /etc/resolv.conf
+
+```
+
+```
+search domain.test
+nameserver 127.0.0.1
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth1
+iface eth1 inet static
+address 172.30.10.10
+netmask 255.255.255.0
+dns-nameservers 127.0.0.1
+dns-search domain.test
+
+
+auto eth0
+iface eth0 inet static
+address 172.30.66.24
+netmask 255.255.255.0
+gateway 172.30.66.1
+```
+
+```
+systemctl restart networking
+```
+```
+sudo /opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d domain.test -n dc1 -p Passw0rd --ip 172.30.10.10 --no-reboot
+```
+
+```
+reboot
+```
+
+```
+iptables -t nat -A POSTROUTING -o eth0  -j MASQUERADE
+```
+
+```
+nano /etc/sysctl.conf
+```
+
+```
+net.ipv4.ip_forward=1
+```
+
+```
+sysctl -p
+```
+
+![image](https://user-images.githubusercontent.com/79700810/198518839-010cb036-16ed-4c78-918e-ec72a68eb827.png)
+
+
+!!!!!!!!!!!!!!!!!!!!
+### DC2
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+dc2.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 dc2
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.11
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d dc2 -i -f
+```
+
+```
+reboot
+```
+
+
+После перезагрузки на DC1
+
+![image](https://user-images.githubusercontent.com/79700810/198519150-7e5dc3b1-1812-48da-9810-2bc72aaafc6e.png)
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!
+### AUDIT
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+audit.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 audit
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.12
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d mon -i -f
+```
+
+```
+reboot
+```
+
+!!!!!!!!!!!!!!!!!!!!
+### MON
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+mon.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 mon
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.13
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d mon -i -f
+```
+
+```
+reboot
+```
+
+
+!!!!!!!!!!!!!!!!!!!!
+### SMB
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+smb.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 smb
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.14
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d smb -i -f
+```
+
+```
+reboot
+```
+
+
+!!!!!!!!!!!!!!!!!!!!
+### DHCP
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+dhcp.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 dhcp
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.15
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d smb -i -f
+```
+
+```
+reboot
+```
+
+!!!!!!!!!!!!!!!!!!!!
+### REPO
+!!!!!!!!!!!!!!!!!!!!
+
+```
+nano /etc/hostname
+```
+
+```
+repo.domain.test
+```
+
+```
+nano /etc/hosts
+```
+
+```
+127.0.0.1 localhost
+127.0.1.1 repo
+```
+
+```
+nano /etc/resolv.conf
+```
+
+```
+search domain.test
+nameserver 172.30.10.10
+```
+
+```
+systemctl stop network-manager
+systemctl disable network-manager
+```
+
+```
+nano  /etc/network/interfaces
+```
+
+```
+auto eth0
+iface eth0 inet static
+address 172.30.10.16
+netmask 255.255.255.0
+gateway 172.30.10.10
+dns-nameservers 172.30.10.10
+dns-search domain.test
+```
+
+```
+systemctl restart networking
+```
+
+```
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d repo -i -f
+```
+
+```
+reboot
 ```
 
