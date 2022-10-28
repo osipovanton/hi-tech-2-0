@@ -468,6 +468,8 @@ sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin
 reboot
 ```
 
+![image](https://user-images.githubusercontent.com/79700810/198530390-d2632984-e9f5-4d3b-af2f-f80741890b13.png)
+
 
 !!!!!!!!!!!!!!!!!!!!
 ### SMB
