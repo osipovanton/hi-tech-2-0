@@ -406,6 +406,18 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198526559-31c051c1-55d7-48a7-8c0b-5d4436d3861a.png)
 
 
+![image](https://user-images.githubusercontent.com/79700810/198532715-76bc415d-8160-4906-9fef-ef3fc7a0294c.png)
+
+Настройка правил
+
+![image](https://user-images.githubusercontent.com/79700810/198533519-de259a6f-0d00-4d5e-8c2c-3db98b7a3312.png)
+
+![image](https://user-images.githubusercontent.com/79700810/198533660-f74e7c4e-f4aa-405e-85c4-000186400d9c.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198533786-246cdd4a-59ad-4a16-9f62-c2cef8df7bdb.png)
+
+
 
 !!!!!!!!!!!!!!!!!!!!
 ### MON
@@ -469,6 +481,16 @@ reboot
 ```
 
 ![image](https://user-images.githubusercontent.com/79700810/198530390-d2632984-e9f5-4d3b-af2f-f80741890b13.png)
+
+Настройка Мониторинга 
+
+![image](https://user-images.githubusercontent.com/79700810/198533150-112e367f-f2aa-42f4-9538-586faff64cfb.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198533285-5e9ef0c4-9abb-4fea-a760-fa121d14d401.png)
+
+
+![image](https://user-images.githubusercontent.com/79700810/198533351-539d8f33-db4a-4110-9553-c091a6797fe0.png)
 
 
 !!!!!!!!!!!!!!!!!!!!
