@@ -1,7 +1,7 @@
 ## Лабораторная работа 5
 
-![DEMO2022azure-Страница 7 (3)](https://user-images.githubusercontent.com/79700810/198542242-7e7de2af-f48f-400c-944d-26e700c670ca.jpg)
 
+![DEMO2022azure-Страница 7 (4)](https://user-images.githubusercontent.com/79700810/198542796-ff778d41-c486-4852-adfc-7e6edad5fa74.jpg)
 
 
 
