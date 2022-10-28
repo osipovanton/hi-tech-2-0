@@ -742,7 +742,7 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198547402-ed017db1-eda3-442a-938d-f8b67f90fbd2.png)
 
 
-### Базы данных по аналогии DB1/WEB/DB2/WEB/DB3/WEB/JEN
+### Базы данных по аналогии DB1/WEB/DB2/WEB/DB3/WEB/JEN/Client1
 !!!!!!!!!!!!!!!!!!!!
 DB1
 !!!!!!!!!!!!!!!!!!!!
