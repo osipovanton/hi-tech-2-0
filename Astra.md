@@ -1,7 +1,7 @@
 ## Лабораторная работа 5
 
+![DEMO2022azure-Страница 7 (3)](https://user-images.githubusercontent.com/79700810/198542242-7e7de2af-f48f-400c-944d-26e700c670ca.jpg)
 
-![DEMO2022azure-Страница 7 (2)](https://user-images.githubusercontent.com/79700810/198517174-0e3d27f0-14d1-4455-89c1-7aa44340cfe3.jpg)
 
 
 
@@ -514,6 +514,10 @@ reboot
 ![image](https://user-images.githubusercontent.com/79700810/198533351-539d8f33-db4a-4110-9553-c091a6797fe0.png)
 
 
+
+![image](https://user-images.githubusercontent.com/79700810/198540487-7b74c8f4-2ea5-4129-ab3c-c5b8469ae712.png)
+
+
 !!!!!!!!!!!!!!!!!!!!
 ### SMB
 !!!!!!!!!!!!!!!!!!!!
@@ -672,71 +676,32 @@ systemctl restart networking
 ```
 
 ```
-sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d smb -i -f
+sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d dhcp -i -f
 ```
 
 ```
 reboot
 ```
 
-!!!!!!!!!!!!!!!!!!!!
-### REPO
-!!!!!!!!!!!!!!!!!!!!
+На DC1 после перезагрузки
 
-```
-nano /etc/hostname
-```
 
-```
-repo.domain.test
-```
+![image](https://user-images.githubusercontent.com/79700810/198539077-e04fb70d-6db1-44a3-9578-b1eb176a2e97.png)
 
-```
-nano /etc/hosts
-```
+Настройка DHCP
 
-```
-127.0.0.1 localhost
-127.0.1.1 repo
-```
 
-```
-nano /etc/resolv.conf
-```
+![image](https://user-images.githubusercontent.com/79700810/198539527-6a2fccda-f743-4fcc-b4cc-b9ccb8a8dfc5.png)
 
-```
-search domain.test
-nameserver 172.30.10.10
-```
 
-```
-systemctl stop network-manager
-systemctl disable network-manager
-```
+![image](https://user-images.githubusercontent.com/79700810/198539702-013b724a-c9c6-40c5-9f8d-b9f876aecc9f.png)
 
-```
-nano  /etc/network/interfaces
-```
+![image](https://user-images.githubusercontent.com/79700810/198539820-17d703dc-2418-4370-b14e-c5265b6108d0.png)
 
-```
-auto eth0
-iface eth0 inet static
-address 172.30.10.16
-netmask 255.255.255.0
-gateway 172.30.10.10
-dns-nameservers 172.30.10.10
-dns-search domain.test
-```
 
-```
-systemctl restart networking
-```
 
-```
-sudo /opt/rbta/aldpro/client/bin/aldpro-client-installer -c domain.test -u admin -p Passw0rd -d repo -i -f
-```
 
-```
-reboot
-```
+
+
+
 
